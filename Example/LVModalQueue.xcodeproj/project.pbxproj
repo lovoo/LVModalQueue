@@ -21,6 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		72FCA32C1BCCE52F000778A4 /* LVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FCA32B1BCCE52F000778A4 /* LVDetailViewController.m */; };
+		72FCA32E1BCCE91C000778A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FCA32D1BCCE91C000778A4 /* LaunchScreen.storyboard */; };
+		72FCA3321BCD00D6000778A4 /* example.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 72FCA3311BCD00D6000778A4 /* example.jpeg */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D15541F300380B196E3B32AC /* Pods_LVModalQueue_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D88A27DC11EF7791C51741 /* Pods_LVModalQueue_Example.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		72FCA32A1BCCE52F000778A4 /* LVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDetailViewController.h; sourceTree = "<group>"; };
+		72FCA32B1BCCE52F000778A4 /* LVDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDetailViewController.m; sourceTree = "<group>"; };
+		72FCA32D1BCCE91C000778A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72FCA3311BCD00D6000778A4 /* example.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpeg; sourceTree = "<group>"; };
 		730424BFEF0984B574DD34EB /* Pods-LVModalQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LVModalQueue_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
 		86D88A27DC11EF7791C51741 /* Pods_LVModalQueue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LVModalQueue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -135,7 +142,11 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LVViewController.h */,
 				6003F5A6195388D20070C39A /* LVViewController.m */,
+				72FCA32A1BCCE52F000778A4 /* LVDetailViewController.h */,
+				72FCA32B1BCCE52F000778A4 /* LVDetailViewController.m */,
+				72FCA32D1BCCE91C000778A4 /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				72FCA3311BCD00D6000778A4 /* example.jpeg */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for LVModalQueue";
@@ -244,7 +255,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LV;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Michael Berg";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -277,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				72FCA32E1BCCE91C000778A4 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				72FCA3321BCD00D6000778A4 /* example.jpeg in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +406,7 @@
 				6003F59E195388D20070C39A /* LVAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				72FCA32C1BCCE52F000778A4 /* LVDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +466,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -515,7 +530,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LVModalQueue/LVModalQueue-Prefix.pch";
 				INFOPLIST_FILE = "LVModalQueue/LVModalQueue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -530,7 +547,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LVModalQueue/LVModalQueue-Prefix.pch";
 				INFOPLIST_FILE = "LVModalQueue/LVModalQueue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,6 +572,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LVModalQueue_Example.app/LVModalQueue_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -572,6 +592,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LVModalQueue_Example.app/LVModalQueue_Example";
 				WRAPPER_EXTENSION = xctest;
