@@ -7,6 +7,10 @@ This fixes 'NSInternalInconsistencyException's when presentViewController: and d
 [![License](https://img.shields.io/cocoapods/l/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 [![Platform](https://img.shields.io/cocoapods/p/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 
+## Sample
+
+![Sample image](Example/example.gif "Sample")
+
 ## Installation
 
 LVModalQueue is available through [CocoaPods](http://cocoapods.org). To install
