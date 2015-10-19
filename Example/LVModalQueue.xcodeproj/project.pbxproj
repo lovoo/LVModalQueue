@@ -60,6 +60,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		72688F671BD4EE64003F5CF0 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		72FCA32A1BCCE52F000778A4 /* LVDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDetailViewController.h; sourceTree = "<group>"; };
 		72FCA32B1BCCE52F000778A4 /* LVDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDetailViewController.m; sourceTree = "<group>"; };
 		72FCA32D1BCCE91C000778A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,6 +189,7 @@
 			children = (
 				13CDB81167ED396E9D619B06 /* LVModalQueue.podspec */,
 				C0054B29E8A15647341D25F1 /* README.md */,
+				72688F671BD4EE64003F5CF0 /* .travis.yml */,
 				D38455F1FC057296A23C3E62 /* LICENSE */,
 			);
 			name = "Podspec Metadata";

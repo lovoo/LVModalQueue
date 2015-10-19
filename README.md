@@ -1,6 +1,6 @@
 # LVModalQueue
 
-[![CI Status](http://img.shields.io/travis/Michael Berg/LVModalQueue.svg?style=flat)](https://travis-ci.org/Michael Berg/LVModalQueue)
+[![CI Status](http://img.shields.io/travis/Lovoo/LVModalQueue.svg?style=flat)](https://travis-ci.org/Lovoo/LVModalQueue)
 [![Version](https://img.shields.io/cocoapods/v/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 [![License](https://img.shields.io/cocoapods/l/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 [![Platform](https://img.shields.io/cocoapods/p/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
@@ -10,8 +10,6 @@ This fixes 'NSInternalInconsistencyException's when presentViewController: and d
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 

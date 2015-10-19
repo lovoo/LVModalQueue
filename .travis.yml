@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode7
+xcode_workspace: Example/LVModalQueue.xcworkspace
+xcode_scheme: LVModalQueue-Example
+xcode_sdk:
+- iphonesimulator
