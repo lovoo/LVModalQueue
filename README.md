@@ -19,9 +19,9 @@ pod "LVModalQueue"
 ## Usage
 
 1. Install.
-2. Thats it!
+2. __Thats it!__
 
-LVModalQueue hooks into each call to presentViewController:animated:completion: and dismissViewController:animated:completion and recognizes, if any previous transition is not finished yet.
+LVModalQueue hooks into each call to _presentViewController:animated:completion:_ and _dismissViewController:animated:completion:_ and recognizes, if any previous transition has not finished yet.
 
 ## License
 
