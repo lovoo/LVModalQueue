@@ -22,10 +22,6 @@ it, simply add the following line to your Podfile:
 pod "LVModalQueue"
 ```
 
-## Author
-
-Michael Berg, berg.micha@icloud.com
-
 ## License
 
 LVModalQueue is available under the LOVOO license. See the LICENSE file for more info.
