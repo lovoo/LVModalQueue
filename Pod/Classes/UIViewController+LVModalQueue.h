@@ -1,5 +1,5 @@
 //
-//  UIViewController+LVPresentationQueueing.h
+//  UIViewController+LVModalQueue.h
 //  LOVOO
 //
 //  Created by Michael Berg on 23.09.15.

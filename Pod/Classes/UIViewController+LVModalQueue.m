@@ -1,5 +1,5 @@
 //
-//  UIViewController+LVPresentationQueueing.m
+//  UIViewController+LVModalQueue.m
 //  LOVOO
 //
 //  Created by Michael Berg on 23.09.15.
@@ -205,14 +205,14 @@ static NSUInteger transitionCount = 0;
  */
 - (UIViewController *)lv_topmostPresentedViewController
 {
-    // if view controller is not in the hierarchy (and not the rootViewController), we should return nil
+    // if view controller is not in the hierarchy (and not the rootViewController), we should ask the parentViewController for its topMostController or return nil
     if (self.presentedViewController == nil && self.presentingViewController == nil && ![self lv_isRootViewController])
     {
-        return nil;
+        return [self.parentViewController lv_topmostPresentedViewController];
     }
     
     UIViewController *viewController = self;
-
+    
     if (viewController.presentedViewController)
     {
         // iterate through modal view controllers if available
