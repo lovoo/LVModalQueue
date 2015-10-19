@@ -14,7 +14,6 @@ typedef void (^LVQueueTransitionBlock)(void);
 
 static const NSMutableArray <LVQueueTransitionBlock> *transitionQueue;
 static BOOL isTransitioning = NO;
-static NSUInteger transitionCount = 0;
 
 
 @implementation UIViewController (LVModalQueue)
@@ -59,7 +58,7 @@ static NSUInteger transitionCount = 0;
             return;
         }
         
-        [self lv_transitionWillStart];
+        [UIViewController lv_transitionWillStart];
         
         // because we swizzled the implementations, this will call the original implementation
         [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
@@ -72,8 +71,8 @@ static NSUInteger transitionCount = 0;
 - (void)lv_queueDismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
 {
     [UIViewController lv_performTransition:^{
-        [self lv_transitionWillStart];
-
+        [UIViewController lv_transitionWillStart];
+        
         // we don't want to break presentations, if someone decides to dismiss a view controller, that is not in the view hierarchy.
         if (!self.presentingViewController && !self.presentedViewController)
         {
@@ -83,7 +82,7 @@ static NSUInteger transitionCount = 0;
             
             return;
         }
-
+        
         // because we swizzled the implementations, this will call the original implementation
         [self lv_queueDismissViewControllerAnimated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
     }];
@@ -93,24 +92,11 @@ static NSUInteger transitionCount = 0;
 #pragma mark - Queueing
 
 /**
- *  When we start the transition, we save an instance of the viewcontroller.
- *  FAILOVER: If the currentViewController is still the same after 1 second (could happen, if completion block is not called for some reason), we reset isTransitioning
+ *  Call this method, when a transition is started
  */
-- (void)lv_transitionWillStart
++ (void)lv_transitionWillStart
 {
-    ++transitionCount;
     isTransitioning = YES;
-    
-    NSUInteger currentTransitionCount = transitionCount;
-    
-    //Failover. If the transtionCount has not changed after one second, we reset isTransitioning
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-    {
-        if (currentTransitionCount == transitionCount)
-        {
-            isTransitioning = NO;
-        }
-    });
 }
 
 /**
@@ -162,9 +148,9 @@ static NSUInteger transitionCount = 0;
 {
     // NOTE: unfortunately we have to delay the next presentation. Calling dismiss from a presentations completion-block crashes. Using the transitioningCoordinaters animateAlongsideTransitions completion Block always crashes in some rare cases, when using custom transitions
     dispatch_async(dispatch_get_main_queue(), ^
-    {
-        [self lv_dequeueTransition];
-    });
+                   {
+                       [self lv_dequeueTransition];
+                   });
 }
 
 /**
