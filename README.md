@@ -1,6 +1,6 @@
 # LVModalQueue
 
-This fixes 'NSInternalInconsistencyException's when presentViewController: and dismissViewController: are called, while a transition is already in progress. Transitions are queued for later execution.
+This fixes 'NSInternalInconsistencyException's when _presentViewController:_ and _dismissViewController:_ are called, while a transition is already in progress. Transitions are queued for later execution.
 
 [![CI Status](http://img.shields.io/travis/Lovoo/LVModalQueue.svg?style=flat)](https://travis-ci.org/Lovoo/LVModalQueue/)
 [![Version](https://img.shields.io/cocoapods/v/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
