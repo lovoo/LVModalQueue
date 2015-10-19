@@ -17,7 +17,7 @@ LVModalQueue is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LVModalQueue"
+pod 'LVModalQueue', :git => 'https://github.com/Lovoo/LVModalQueue'
 ```
 
 ## Usage
