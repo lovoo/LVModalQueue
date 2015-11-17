@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LVModalQueue"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.license          = { :type => 'BSD' }
   s.summary          = "Queue presentViewController: and dismissViewController: when called multiple times"
   s.description      = <<-DESC
