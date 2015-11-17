@@ -60,8 +60,22 @@ static BOOL isTransitioning = NO;
         
         [UIViewController lv_transitionWillStart];
         
-        // because we swizzled the implementations, this will call the original implementation
-        [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+        // fallback for iOS 7. When cancelling an interactive animation on iOS 7, the completion block is not called.
+        if ([UIDevice currentDevice].systemName.floatValue < 8.0)
+        {
+            // because we swizzled the implementations, this will call the original implementation
+            [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:completion];
+            
+            [self.transitionCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
+             {
+                 [UIViewController lv_transitionDidComplete];
+             }];
+        }
+        else
+        {
+            // because we swizzled the implementations, this will call the original implementation
+            [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+        }
     }];
 }
 
@@ -83,8 +97,22 @@ static BOOL isTransitioning = NO;
             return;
         }
         
-        // because we swizzled the implementations, this will call the original implementation
-        [self lv_queueDismissViewControllerAnimated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+        // fallback for iOS 7. When cancelling an interactive animation on iOS 7, the completion block is not called.
+        if ([UIDevice currentDevice].systemName.floatValue < 8.0)
+        {
+            // because we swizzled the implementations, this will call the original implementation
+            [self lv_queueDismissViewControllerAnimated:flag completion:completion];
+            
+            [self.transitionCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
+             {
+                 [UIViewController lv_transitionDidComplete];
+             }];
+        }
+        else
+        {
+            // because we swizzled the implementations, this will call the original implementation
+            [self lv_queueDismissViewControllerAnimated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+        }
     }];
 }
 
