@@ -61,7 +61,7 @@ static BOOL isTransitioning = NO;
         [UIViewController lv_transitionWillStart];
         
         // fallback for iOS 7. When cancelling an interactive animation on iOS 7, the completion block is not called.
-        if ([UIDevice currentDevice].systemName.floatValue < 8.0)
+        if ([UIDevice currentDevice].systemVersion.floatValue < 8.0)
         {
             // because we swizzled the implementations, this will call the original implementation
             [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:completion];
