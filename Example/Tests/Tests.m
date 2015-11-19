@@ -176,7 +176,7 @@
                         }];
                    });
     
-    [self waitForExpectationsWithTimeout:100.0 handler:nil];
+    [self waitForExpectationsWithTimeout:10.0 handler:nil];
 }
 
 @end
