@@ -45,7 +45,7 @@ static BOOL isTransitioning = NO;
 /**
  *  custom implementation of presentViewController. Creates a transition block, that can be queued for later in case a view controller is currently transitioning
  */
-- (void)lv_queuePresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion
+- (void)lv_queuePresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion
 {
     [UIViewController lv_performTransition:^{
         UIViewController *presenter = [self lv_topmostPresentedViewController];
@@ -64,17 +64,14 @@ static BOOL isTransitioning = NO;
         if ([UIDevice currentDevice].systemVersion.floatValue < 8.0)
         {
             // because we swizzled the implementations, this will call the original implementation
-            [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:completion];
+            [presenter lv_queuePresentViewController:viewControllerToPresent animated:animated completion:completion];
             
-            [self.transitionCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
-             {
-                 [UIViewController lv_transitionDidComplete];
-             }];
+            [UIViewController lv_subscribeForCompletionWithTransitioningCoordinator:presenter.transitionCoordinator isAnimated:animated];
         }
         else
         {
             // because we swizzled the implementations, this will call the original implementation
-            [presenter lv_queuePresentViewController:viewControllerToPresent animated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+            [presenter lv_queuePresentViewController:viewControllerToPresent animated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
         }
     }];
 }
@@ -82,7 +79,7 @@ static BOOL isTransitioning = NO;
 /**
  *  custom implementation of dismissViewController. Creates a transition block, that can be queued for later in case a view controller is currently transitioning
  */
-- (void)lv_queueDismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
+- (void)lv_queueDismissViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion
 {
     [UIViewController lv_performTransition:^{
         [UIViewController lv_transitionWillStart];
@@ -91,7 +88,7 @@ static BOOL isTransitioning = NO;
         if (!self.presentingViewController && !self.presentedViewController)
         {
             // call the original dismiss method anyway, to let UIKit decide, wether to call the completion block or not.
-            [self lv_queueDismissViewControllerAnimated:flag completion:completion];
+            [self lv_queueDismissViewControllerAnimated:animated completion:completion];
             [UIViewController lv_transitionDidComplete];
             
             return;
@@ -101,17 +98,14 @@ static BOOL isTransitioning = NO;
         if ([UIDevice currentDevice].systemVersion.floatValue < 8.0)
         {
             // because we swizzled the implementations, this will call the original implementation
-            [self lv_queueDismissViewControllerAnimated:flag completion:completion];
+            [self lv_queueDismissViewControllerAnimated:animated completion:completion];
             
-            [self.transitionCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
-             {
-                 [UIViewController lv_transitionDidComplete];
-             }];
+            [UIViewController lv_subscribeForCompletionWithTransitioningCoordinator:self.transitionCoordinator isAnimated:animated];
         }
         else
         {
             // because we swizzled the implementations, this will call the original implementation
-            [self lv_queueDismissViewControllerAnimated:flag completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:flag]];
+            [self lv_queueDismissViewControllerAnimated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
         }
     }];
 }
@@ -205,6 +199,29 @@ static BOOL isTransitioning = NO;
         
         [UIViewController lv_transitionDidComplete];
     };
+}
+
+/**
+ *  Subscribes for the completion of a transitioningCoordinator
+ *
+ *  @param transitioningCoordinator the transitioningCoordinator of the transition
+ *  @param animated                 is the transition animated or not?
+ *
+ *  @since <#version number#>
+ */
++ (void)lv_subscribeForCompletionWithTransitioningCoordinator:(id<UIViewControllerTransitionCoordinator>)transitioningCoordinator isAnimated:(BOOL)animated
+{
+    if (!animated || !transitioningCoordinator)
+    {
+        [UIViewController lv_transitionDidComplete];
+        
+        return;
+    }
+    
+    [transitioningCoordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
+     {
+         [UIViewController lv_transitionDidComplete];
+     }];
 }
 
 
