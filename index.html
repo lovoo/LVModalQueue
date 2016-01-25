@@ -41,6 +41,11 @@
 Having truly interactive UIViewController transitions could also lead to multiple concurrent presentations as the user can start a transition, while an old one is still running.</p>
 
 <h2>
+<a id="sample" class="anchor" href="#sample" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample</h2>
+
+<p><img src="https://github.com/lovoo/LVModalQueue/raw/master/Example/example.gif" alt="Sample image" title="Sample"></p>
+
+<h2>
 <a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
 
 <p>LVModalQueue hooks into presentations and dismissals by swizzling into UIViewControllers <em>presentViewController:animated:completion:</em> and <em>dismissViewControllerAnimated:completion:</em> methods. If a transition is currently animating, it is queued for later execution when the transition is finished.</p>
