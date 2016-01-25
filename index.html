@@ -38,7 +38,7 @@
 <p>Having a big app with a lot of external frameworks comes with a lot of challenges.</p>
 
 <p>One of them is, that most of this frameworks tend to present their UIViewControllers on <em>[UIApplication sharedApplication].keyWindow.rootViewController</em>.
-Having truly interactive UIViewController transitions could also lead to multiple concurrent presentations as the user can tap on cells, while an animation is still running.</p>
+Having truly interactive UIViewController transitions could also lead to multiple concurrent presentations as the user can start a transition, while an old one is still running.</p>
 
 <h2>
 <a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
