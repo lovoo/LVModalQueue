@@ -7,10 +7,6 @@ This fixes 'NSInternalInconsistencyException's when _presentViewController:_ and
 [![License](https://img.shields.io/cocoapods/l/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 [![Platform](https://img.shields.io/cocoapods/p/LVModalQueue.svg?style=flat)](http://cocoapods.org/pods/LVModalQueue)
 
-## Sample
-
-![Sample image](Example/example.gif "Sample")
-
 ## Quick start
 
 LVModalQueue is available on CocoaPods.
@@ -19,7 +15,11 @@ Add the following to your Podfile:
 ```ruby
 pod 'LVModalQueue', :git => 'https://github.com/Lovoo/LVModalQueue'
 ```
-Done! You don't have to import anything or change your existing code!
+__Done! You don't have to import anything or change your existing code!__
+
+## Sample
+
+![Sample image](Example/example.gif "Sample")
 
 ## Motivation
 
