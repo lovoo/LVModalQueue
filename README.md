@@ -2,7 +2,7 @@
 
 This fixes 'NSInternalInconsistencyException's when _presentViewController:_ and _dismissViewController:_ are called, while a transition is already in progress. Transitions are queued for later execution.
 
-[![CI Status](https://travis-ci.org/Lovoo/LVModalQueue.svg)](https://travis-ci.org/Lovoo/LVModalQueue/)
+[![Build Status](https://travis-ci.org/lovoo/LVModalQueue.svg?branch=master)](https://travis-ci.org/lovoo/LVModalQueue) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Quick start
 
