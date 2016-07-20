@@ -12,6 +12,8 @@
 
 typedef void (^LVQueueTransitionBlock)(void);
 
+static BOOL _LVModelQueueEnabled = YES;
+
 static const NSMutableArray <LVQueueTransitionBlock> *transitionQueue;
 static BOOL isTransitioning = NO;
 
@@ -47,6 +49,11 @@ static BOOL isTransitioning = NO;
  */
 - (void)lv_queuePresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion
 {
+    if (!_LVModelQueueEnabled) {
+        [self lv_queuePresentViewController:viewControllerToPresent animated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
+        return;
+    }
+
     [UIViewController lv_performTransition:^{
         UIViewController *presenter = [self lv_topmostPresentedViewController];
         
@@ -81,6 +88,11 @@ static BOOL isTransitioning = NO;
  */
 - (void)lv_queueDismissViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion
 {
+    if (!_LVModelQueueEnabled) {
+        [self lv_queueDismissViewControllerAnimated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
+        return;
+    }
+
     [UIViewController lv_performTransition:^{
         [UIViewController lv_transitionWillStart];
         
@@ -207,7 +219,7 @@ static BOOL isTransitioning = NO;
  *  @param transitioningCoordinator the transitioningCoordinator of the transition
  *  @param animated                 is the transition animated or not?
  *
- *  @since 0.2.0
+ *  @since 0.1.0
  */
 + (void)lv_subscribeForCompletionWithTransitioningCoordinator:(id<UIViewControllerTransitionCoordinator>)transitioningCoordinator isAnimated:(BOOL)animated
 {
@@ -266,6 +278,20 @@ static BOOL isTransitioning = NO;
 - (BOOL)lv_isRootViewController
 {
     return self.isViewLoaded && self.view.window.rootViewController == self;
+}
+
+@end
+
+@implementation LVModelQueueConfiguration
+
++ (void)setEnabled:(BOOL)enabled
+{
+    _LVModelQueueEnabled = enabled;
+}
+
++ (BOOL)isEnabled
+{
+    return _LVModelQueueEnabled;
 }
 
 @end

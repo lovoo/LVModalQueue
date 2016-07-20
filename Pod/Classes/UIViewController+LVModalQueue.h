@@ -14,3 +14,19 @@
 @interface UIViewController (LVModalQueue)
 
 @end
+
+@interface LVModelQueueConfiguration : NSObject
+
+/**
+ Enables the modal queue.
+ 
+ @param enabled YES for enabeling the modal queue, NO otherwise.
+ */
++ (void)setEnabled:(BOOL)enabled;
+
+/**
+ @return YES if the modal queue is enabled. Default: YES.
+ */
++ (BOOL)isEnabled;
+
+@end
