@@ -15,7 +15,7 @@
 
 @end
 
-@interface LVModelQueueConfiguration : NSObject
+@interface LVModalQueueConfiguration : NSObject
 
 /**
  Enables the modal queue.

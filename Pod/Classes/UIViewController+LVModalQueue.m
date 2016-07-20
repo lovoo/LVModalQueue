@@ -12,7 +12,7 @@
 
 typedef void (^LVQueueTransitionBlock)(void);
 
-static BOOL _LVModelQueueEnabled = YES;
+static BOOL _LVModalQueueEnabled = YES;
 
 static const NSMutableArray <LVQueueTransitionBlock> *transitionQueue;
 static BOOL isTransitioning = NO;
@@ -49,7 +49,7 @@ static BOOL isTransitioning = NO;
  */
 - (void)lv_queuePresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)animated completion:(void (^)(void))completion
 {
-    if (!_LVModelQueueEnabled) {
+    if (!_LVModalQueueEnabled) {
         [self lv_queuePresentViewController:viewControllerToPresent animated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
         return;
     }
@@ -88,7 +88,7 @@ static BOOL isTransitioning = NO;
  */
 - (void)lv_queueDismissViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion
 {
-    if (!_LVModelQueueEnabled) {
+    if (!_LVModalQueueEnabled) {
         [self lv_queueDismissViewControllerAnimated:animated completion:[UIViewController lv_queueBlockWithCompletionBlock:completion animated:animated]];
         return;
     }
@@ -282,16 +282,16 @@ static BOOL isTransitioning = NO;
 
 @end
 
-@implementation LVModelQueueConfiguration
+@implementation LVModalQueueConfiguration
 
 + (void)setEnabled:(BOOL)enabled
 {
-    _LVModelQueueEnabled = enabled;
+    _LVModalQueueEnabled = enabled;
 }
 
 + (BOOL)isEnabled
 {
-    return _LVModelQueueEnabled;
+    return _LVModalQueueEnabled;
 }
 
 @end
