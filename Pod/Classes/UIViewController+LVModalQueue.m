@@ -219,7 +219,7 @@ static BOOL isTransitioning = NO;
  *  @param transitioningCoordinator the transitioningCoordinator of the transition
  *  @param animated                 is the transition animated or not?
  *
- *  @since 0.1.0
+ *  @since 0.2.0
  */
 + (void)lv_subscribeForCompletionWithTransitioningCoordinator:(id<UIViewControllerTransitionCoordinator>)transitioningCoordinator isAnimated:(BOOL)animated
 {
