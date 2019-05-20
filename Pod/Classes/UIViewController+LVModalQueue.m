@@ -287,6 +287,11 @@ static BOOL isTransitioning = NO;
 + (void)setEnabled:(BOOL)enabled
 {
     _LVModalQueueEnabled = enabled;
+
+    if (!enabled) {
+        isTransitioning = NO;
+        transitionQueue = [NSMutableArray array];
+    }
 }
 
 + (BOOL)isEnabled
