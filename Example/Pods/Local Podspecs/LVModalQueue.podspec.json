@@ -1,25 +1,25 @@
 {
   "name": "LVModalQueue",
-  "version": "0.1.0",
-  "summary": "A short description of LVModalQueue.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/LVModalQueue",
-  "license": "MIT",
+  "version": "0.3.0",
+  "license": {
+    "type": "BSD"
+  },
+  "summary": "Queue presentViewController: and dismissViewController: when called multiple times",
+  "description": "This fixes 'NSInternalInconsistencyException's when presentViewController: and dismissViewController: are called, while a transition is already in progress.\nTransitions are queued for later execution.",
+  "homepage": "https://github.com/Lovoo/LVModalQueue",
   "authors": {
-    "Michael Berg": "absoluteheike@web.de"
+    "Michael Berg": "berg.micha@icloud.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/LVModalQueue.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Lovoo/LVModalQueue.git",
+    "tag": "0.3.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "7.0",
+    "tvos": "9.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "LVModalQueue": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Sources/LVModalQueue/**/*",
+  "public_header_files": "Sources/LVModalQueue/**/*.h",
+  "frameworks": "UIKit"
 }

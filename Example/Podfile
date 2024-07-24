@@ -1,12 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
+
 use_frameworks!
 
-target 'LVModalQueue_Example', :exclusive => true do
+target 'LVModalQueue_Example' do
   pod "LVModalQueue", :path => "../"
 end
 
-target 'LVModalQueue_Tests', :exclusive => true do
+target 'LVModalQueue_Tests' do
   pod "LVModalQueue", :path => "../"
-
-  
 end

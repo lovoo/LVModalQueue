@@ -7,547 +7,717 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		129EF664C644DB1425BB326D176C9F3C /* Pods-LVModalQueue_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC6CCE85DAEC093A2C8E8C8D0284F4B /* Pods-LVModalQueue_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4911D07112D801DC65E653A323B6F08A /* Pods-LVModalQueue_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2ECE0469EB207E52752442CAC54A4F /* Pods-LVModalQueue_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53B0D73D1E715B1626B8547479B8960F /* LVModalQueue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 81D9B6FA591B734FC91D81464E7A87F8 /* LVModalQueue.bundle */; };
-		60FD79E6AFE950719A5EE41BEC5E247E /* Pods-LVModalQueue_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7849AA8050E0691CC382BD1CAFEFA5A /* Pods-LVModalQueue_Tests-dummy.m */; };
-		72FCA3281BCBFE10000778A4 /* UIViewController+LVModalQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FCA3261BCBFE10000778A4 /* UIViewController+LVModalQueue.h */; };
-		72FCA3291BCBFE10000778A4 /* UIViewController+LVModalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FCA3271BCBFE10000778A4 /* UIViewController+LVModalQueue.m */; };
-		80C62E7351BFDEE73D6934B65B864AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9DCBC53A63FDCB7293E0DA55B262B170 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A02F85B7C4C21E255103F54815A6F5AF /* Pods-LVModalQueue_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCE9D226865EE778787F9F6E02EDEDF /* Pods-LVModalQueue_Example-dummy.m */; };
-		B1BDD0C38E2CE50AAA5159BAA480069C /* LVModalQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F002AD631F20689C4ACA844EEA753 /* LVModalQueue-dummy.m */; };
-		C14F56EB4FD0F28144012E96A30D1B43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D0160FDBD075A0B5FAEA23B318C531FB /* LVModalQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CB0D4D2A98CA7A9EB69539DB78550B /* LVModalQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EB42819D1129C01E424129679EB0830 /* LVModalQueue-iOS7.1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48124EA9D086EF8B4E14B978C05E6A3D /* LVModalQueue-iOS7.1-dummy.m */; };
+		11C27E973674F1A1DE89A243B7F0D1A9 /* UIViewController+LVModalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E65C332EBF2E4768DDCC6194633042B0 /* UIViewController+LVModalQueue.m */; };
+		11DB55E03569CBD3785D5E2AA83017BC /* UIViewController+LVModalQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2E14A27A6B50890AB1B8923F1F8332 /* UIViewController+LVModalQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19FB3D9EBC596CD224519F64691F2E98 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8CB0E5D2068238F6664CA4BA42D48 /* module.modulemap */; };
+		3B572FEFE7AF053BDAE01A8829FF9866 /* UIViewController+LVModalQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2E14A27A6B50890AB1B8923F1F8332 /* UIViewController+LVModalQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43384B8DDD6ECEA0DC8A159E11B15259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		5D60F7AC7731F2DBF31F52E2BDB1ACE4 /* UIViewController+LVModalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E65C332EBF2E4768DDCC6194633042B0 /* UIViewController+LVModalQueue.m */; };
+		6D748EFBB5077658EA7659C232B2329A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		7B2834ACD9E37623045C0FA9AB0B908F /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8CB0E5D2068238F6664CA4BA42D48 /* module.modulemap */; };
+		847D63C7A71D89E70E45538309A244A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A2E0EEAD83381C1AA6F4A97734178559 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A9AF0BB2DCECD224AD9F9AB74019FF74 /* LVModalQueue-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555668475520CCC41E18378B18A9CFE /* LVModalQueue-iOS8.0-dummy.m */; };
+		ACDC3D5E5FBD8FF28FD5A947ED315F33 /* Pods-LVModalQueue_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7059970DA18E3D2279A6CAB7E0A85243 /* Pods-LVModalQueue_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44C87A4CC7CC66574851E74A3D87DCF /* Pods-LVModalQueue_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 094CDFB08E11F40823A68CB76CB3E59E /* Pods-LVModalQueue_Tests-dummy.m */; };
+		C6FCFBA04F6F38E21B2BBEE23BEF2DAE /* Pods-LVModalQueue_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B536CDA54E9B9749AA223DFC568BD1 /* Pods-LVModalQueue_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5DE0848ACAB20C4845E530826E1F0CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		D6B253ADFB57201DA4FABCB56F8187A0 /* Pods-LVModalQueue_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578C0C31902AD208528D93D59FDE55F /* Pods-LVModalQueue_Example-dummy.m */; };
+		E8B4897BF0E29548AB5A0AF944FF6309 /* LVModalQueue-iOS7.1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59668112C5C58A982B52BC36AE78B6ED /* LVModalQueue-iOS7.1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECFDCF70C493DA7EE9FE505506506D23 /* LVModalQueue-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F343CC1C5EC0B331BE73EE7672D3DCB /* LVModalQueue-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5EA66827F2D848319E9A503D3E5736A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30308322C39AB43733168C7FD7FC7801 /* PBXContainerItemProxy */ = {
+		92D8EA168D9471C315ED9DEF853A1456 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A33DB7095DAF69DC788467D731FE0AD6;
-			remoteInfo = "LVModalQueue-LVModalQueue";
+			remoteGlobalIDString = 5AF7D09AC67D71125A168C3E2E5F6E0A;
+			remoteInfo = "LVModalQueue-iOS7.1";
 		};
-		C199A7BBF7DC3E9F68B72D8F2F66C726 /* PBXContainerItemProxy */ = {
+		A58CCEAB129D1C570705924025512E95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 18DAAABB5BEA9DA8E8132597C9D6F045;
-			remoteInfo = LVModalQueue;
-		};
-		D57C0EEF5DBED313F28709FADC89B38D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18DAAABB5BEA9DA8E8132597C9D6F045;
-			remoteInfo = LVModalQueue;
+			remoteGlobalIDString = 159D022F2AF02627A7B0E1DDFA3AB984;
+			remoteInfo = "LVModalQueue-iOS8.0";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		042EBCCF62A7EB730DE8D1418416ABEC /* LVModalQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LVModalQueue.modulemap; sourceTree = "<group>"; };
-		04D487ACAFE1D798EC1BAA7E8ECE754B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AC6CCE85DAEC093A2C8E8C8D0284F4B /* Pods-LVModalQueue_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LVModalQueue_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1BF6A75852A744733E816F16A2E0BC8C /* Pods-LVModalQueue_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LVModalQueue_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LVModalQueue.xcconfig; sourceTree = "<group>"; };
-		33E276A631ECA52CD7F84E8A1110B5B6 /* Pods-LVModalQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4383B2595E57DEF76BFA30048B17FC39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E671911B0F0022291D8D83BE3946E81 /* Pods-LVModalQueue_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5449C776BA2D9DE91CB8C8B7AC043156 /* LVModalQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LVModalQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BA51D423437BE30BABE7EAC36AF4779 /* Pods-LVModalQueue_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LVModalQueue_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		72FCA3261BCBFE10000778A4 /* UIViewController+LVModalQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LVModalQueue.h"; sourceTree = "<group>"; };
-		72FCA3271BCBFE10000778A4 /* UIViewController+LVModalQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LVModalQueue.m"; sourceTree = "<group>"; };
-		7C2ECE0469EB207E52752442CAC54A4F /* Pods-LVModalQueue_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LVModalQueue_Example-umbrella.h"; sourceTree = "<group>"; };
-		7CC2217DA66704E30E03C9AA37DD3AFE /* Pods-LVModalQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		80F1AA34A23B516F0DE0F3BCC1D0091A /* Pods-LVModalQueue_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		81D9B6FA591B734FC91D81464E7A87F8 /* LVModalQueue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVModalQueue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		966CD2128ED2C5BFBAC33A318241B8F1 /* Pods-LVModalQueue_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A491076512504C1EB6FFE5B4174A23F3 /* Pods-LVModalQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A4A65C791BEF61D727DF9F8FB36146B2 /* Pods-LVModalQueue_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Example-resources.sh"; sourceTree = "<group>"; };
-		A9CB0D4D2A98CA7A9EB69539DB78550B /* LVModalQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LVModalQueue-umbrella.h"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C74F002AD631F20689C4ACA844EEA753 /* LVModalQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LVModalQueue-dummy.m"; sourceTree = "<group>"; };
-		C7849AA8050E0691CC382BD1CAFEFA5A /* Pods-LVModalQueue_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LVModalQueue_Tests-dummy.m"; sourceTree = "<group>"; };
-		CAD8AB0950C85B2609ACF10A05FBD7B4 /* LVModalQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LVModalQueue-prefix.pch"; sourceTree = "<group>"; };
-		CB3F01A318FD2FE0E298E9EF58B1135B /* Pods-LVModalQueue_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LVModalQueue_Tests.modulemap"; sourceTree = "<group>"; };
-		CDCE9D226865EE778787F9F6E02EDEDF /* Pods-LVModalQueue_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LVModalQueue_Example-dummy.m"; sourceTree = "<group>"; };
-		D8AFE50D14A8C3DFAE6D8B582A4FB8A0 /* Pods-LVModalQueue_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Tests-resources.sh"; sourceTree = "<group>"; };
-		E43551A8A74C893C33BF62FC62A5CA17 /* Pods-LVModalQueue_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LVModalQueue_Example.modulemap"; sourceTree = "<group>"; };
-		E9D64F783E26AE5830BB162E85D51AD1 /* Pods_LVModalQueue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LVModalQueue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEF8BA60941F980A3DDAC66D8B7358AE /* Pods-LVModalQueue_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EF24E8045DA0225A40E1A639D1840E08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3DBE899D36367AA82063C92FC985307 /* Pods-LVModalQueue_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FF1B3A70D243402960506D7893ECE463 /* Pods_LVModalQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LVModalQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0689E2201B37235A79B33697FF75E82A /* LVModalQueue-iOS7.1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LVModalQueue-iOS7.1-prefix.pch"; sourceTree = "<group>"; };
+		094CDFB08E11F40823A68CB76CB3E59E /* Pods-LVModalQueue_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LVModalQueue_Tests-dummy.m"; sourceTree = "<group>"; };
+		0FD8CB0E5D2068238F6664CA4BA42D48 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = module.modulemap; sourceTree = "<group>"; };
+		100C39AE2C33044E5F038BF9C707F8C2 /* LVModalQueue-iOS8.0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "LVModalQueue-iOS8.0-Info.plist"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-Info.plist"; sourceTree = "<group>"; };
+		11B536CDA54E9B9749AA223DFC568BD1 /* Pods-LVModalQueue_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LVModalQueue_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2630CC778AE5679A1E92FC695FF2221E /* Pods-LVModalQueue_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Example-Info.plist"; sourceTree = "<group>"; };
+		2B760B4E1372CDAB6598C11CDEE4F30E /* Pods-LVModalQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		34D452202FFD8E1956F258DC75AD1C80 /* LVModalQueue-iOS7.1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LVModalQueue-iOS7.1-Info.plist"; sourceTree = "<group>"; };
+		3502D21D25AEBED172D1D14D374580F2 /* Pods-LVModalQueue_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3555668475520CCC41E18378B18A9CFE /* LVModalQueue-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LVModalQueue-iOS8.0-dummy.m"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-dummy.m"; sourceTree = "<group>"; };
+		37D4F5112B9D13FC9064CDD4181B6C51 /* LVModalQueue-iOS7.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LVModalQueue-iOS7.1.debug.xcconfig"; sourceTree = "<group>"; };
+		43BA46764F643D9A0B4A50B6B61AA87F /* Pods-LVModalQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		48124EA9D086EF8B4E14B978C05E6A3D /* LVModalQueue-iOS7.1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LVModalQueue-iOS7.1-dummy.m"; sourceTree = "<group>"; };
+		4FA759030444630B017614C795C5284C /* Pods-LVModalQueue_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		52B0086C9EBE24139271973B940011D6 /* LVModalQueue-iOS8.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LVModalQueue-iOS8.0.debug.xcconfig"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0.debug.xcconfig"; sourceTree = "<group>"; };
+		541A6D0D5CE6916F9E79E7E70501ADAB /* LVModalQueue-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LVModalQueue-iOS8.0-prefix.pch"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
+		5578C0C31902AD208528D93D59FDE55F /* Pods-LVModalQueue_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LVModalQueue_Example-dummy.m"; sourceTree = "<group>"; };
+		59668112C5C58A982B52BC36AE78B6ED /* LVModalQueue-iOS7.1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LVModalQueue-iOS7.1-umbrella.h"; sourceTree = "<group>"; };
+		5D44865280A4D90E8F1DD58B424308A7 /* LVModalQueue.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LVModalQueue.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F343CC1C5EC0B331BE73EE7672D3DCB /* LVModalQueue-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LVModalQueue-iOS8.0-umbrella.h"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
+		66A772649F170C78B32ADE64E6C2E9A7 /* LVModalQueue-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "LVModalQueue-iOS8.0.modulemap"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0.modulemap"; sourceTree = "<group>"; };
+		6C98A564A00BD9B17B2122EDB609299A /* Pods-LVModalQueue_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LVModalQueue_Tests"; path = Pods_LVModalQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7059970DA18E3D2279A6CAB7E0A85243 /* Pods-LVModalQueue_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LVModalQueue_Example-umbrella.h"; sourceTree = "<group>"; };
+		73E961EFD7E4B1668506C8287FFBAE37 /* Pods-LVModalQueue_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8319F4C5B5C304C1547047E80AC32F90 /* Pods-LVModalQueue_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LVModalQueue_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		896D525B8C9A25033BA5E5FE22B5E3C5 /* Pods-LVModalQueue_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		91045377845605C7480BE671BFEB1551 /* Pods-LVModalQueue_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LVModalQueue_Example"; path = Pods_LVModalQueue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F1D78369D1A61742FF8CA35B11E109 /* LVModalQueue-iOS8.0 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "LVModalQueue-iOS8.0"; path = LVModalQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A570D7F5DC7DF36D53CCFC1B3EC17B9B /* LVModalQueue-iOS7.1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "LVModalQueue-iOS7.1.modulemap"; sourceTree = "<group>"; };
+		A7F3BA870378A1973346A2F2D3F9248C /* Pods-LVModalQueue_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LVModalQueue_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AD06E8B3AFCCE5401FAD64D5A7D0D211 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BF5B579B56EB02EFF91A867725946CE2 /* Pods-LVModalQueue_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LVModalQueue_Example.modulemap"; sourceTree = "<group>"; };
+		C88BA68E9BF0F403C5DCCC8B4DCFE72D /* LVModalQueue-iOS8.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LVModalQueue-iOS8.0.release.xcconfig"; path = "../LVModalQueue-iOS8.0/LVModalQueue-iOS8.0.release.xcconfig"; sourceTree = "<group>"; };
+		C947168209DCC3C094B4550D0A1E07A4 /* Pods-LVModalQueue_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LVModalQueue_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE52A1682B244C2399F1E9851A93BA3F /* LVModalQueue-iOS7.1 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "LVModalQueue-iOS7.1"; path = LVModalQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E65C332EBF2E4768DDCC6194633042B0 /* UIViewController+LVModalQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LVModalQueue.m"; path = "Sources/LVModalQueue/UIViewController+LVModalQueue.m"; sourceTree = "<group>"; };
+		E67BD4EB76C7BCBDFB3A47495164EB6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E8B0C3F060E9E6769DFBAB3468B4B3AA /* Pods-LVModalQueue_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LVModalQueue_Tests.modulemap"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB2E14A27A6B50890AB1B8923F1F8332 /* UIViewController+LVModalQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LVModalQueue.h"; sourceTree = "<group>"; };
+		EBEB4DA693629270197DC949932567E7 /* LVModalQueue-iOS7.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LVModalQueue-iOS7.1.release.xcconfig"; sourceTree = "<group>"; };
+		EEBF01A50FA809B6C117FA62C7E1FC8A /* Pods-LVModalQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LVModalQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FB5824007C8CBF0191CBAF2CD2215107 /* Pods-LVModalQueue_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LVModalQueue_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		449BBEF1DA52BC4DF4FC89A469416D83 /* Frameworks */ = {
+		8CD855B262CF2DD3932213C638B8C632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EA66827F2D848319E9A503D3E5736A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8958A4AAB5FDBA730B86F35BDB66DEA8 /* Frameworks */ = {
+		98E3E1F16AC8E220E86F09B48532522D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14F56EB4FD0F28144012E96A30D1B43 /* Foundation.framework in Frameworks */,
+				A2E0EEAD83381C1AA6F4A97734178559 /* Foundation.framework in Frameworks */,
+				6D748EFBB5077658EA7659C232B2329A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C79E81D0A7BE99C91BDF889782969908 /* Frameworks */ = {
+		A4C8B9A1FDB11E329647E605FFE83130 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C62E7351BFDEE73D6934B65B864AA7 /* Foundation.framework in Frameworks */,
+				847D63C7A71D89E70E45538309A244A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB3E9ADB3933664F2C003AE272F6A698 /* Frameworks */ = {
+		ECEA0B893F4C349951E5F6B82A3EDDCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DCBC53A63FDCB7293E0DA55B262B170 /* Foundation.framework in Frameworks */,
+				43384B8DDD6ECEA0DC8A159E11B15259 /* Foundation.framework in Frameworks */,
+				D5DE0848ACAB20C4845E530826E1F0CE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B09C750385122D5E17959562B50CA74 /* Pods-LVModalQueue_Example */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04D487ACAFE1D798EC1BAA7E8ECE754B /* Info.plist */,
-				E43551A8A74C893C33BF62FC62A5CA17 /* Pods-LVModalQueue_Example.modulemap */,
-				1BF6A75852A744733E816F16A2E0BC8C /* Pods-LVModalQueue_Example-acknowledgements.markdown */,
-				80F1AA34A23B516F0DE0F3BCC1D0091A /* Pods-LVModalQueue_Example-acknowledgements.plist */,
-				CDCE9D226865EE778787F9F6E02EDEDF /* Pods-LVModalQueue_Example-dummy.m */,
-				EEF8BA60941F980A3DDAC66D8B7358AE /* Pods-LVModalQueue_Example-frameworks.sh */,
-				A4A65C791BEF61D727DF9F8FB36146B2 /* Pods-LVModalQueue_Example-resources.sh */,
-				7C2ECE0469EB207E52752442CAC54A4F /* Pods-LVModalQueue_Example-umbrella.h */,
-				F3DBE899D36367AA82063C92FC985307 /* Pods-LVModalQueue_Example.debug.xcconfig */,
-				A491076512504C1EB6FFE5B4174A23F3 /* Pods-LVModalQueue_Example.release.xcconfig */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = "Pods-LVModalQueue_Example";
-			path = "Target Support Files/Pods-LVModalQueue_Example";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1F6D2F654A970638F98204E0374E30D5 /* Products */ = {
+		234B8927AECE8E525DF32C2A63E25FF4 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				81D9B6FA591B734FC91D81464E7A87F8 /* LVModalQueue.bundle */,
-				5449C776BA2D9DE91CB8C8B7AC043156 /* LVModalQueue.framework */,
-				E9D64F783E26AE5830BB162E85D51AD1 /* Pods_LVModalQueue_Example.framework */,
-				FF1B3A70D243402960506D7893ECE463 /* Pods_LVModalQueue_Tests.framework */,
+				0FD8CB0E5D2068238F6664CA4BA42D48 /* module.modulemap */,
+				EB2E14A27A6B50890AB1B8923F1F8332 /* UIViewController+LVModalQueue.h */,
+			);
+			name = include;
+			path = Sources/LVModalQueue/include;
+			sourceTree = "<group>";
+		};
+		24873D49B26D1B761831CD883227BBCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A570D7F5DC7DF36D53CCFC1B3EC17B9B /* LVModalQueue-iOS7.1.modulemap */,
+				48124EA9D086EF8B4E14B978C05E6A3D /* LVModalQueue-iOS7.1-dummy.m */,
+				34D452202FFD8E1956F258DC75AD1C80 /* LVModalQueue-iOS7.1-Info.plist */,
+				0689E2201B37235A79B33697FF75E82A /* LVModalQueue-iOS7.1-prefix.pch */,
+				59668112C5C58A982B52BC36AE78B6ED /* LVModalQueue-iOS7.1-umbrella.h */,
+				37D4F5112B9D13FC9064CDD4181B6C51 /* LVModalQueue-iOS7.1.debug.xcconfig */,
+				EBEB4DA693629270197DC949932567E7 /* LVModalQueue-iOS7.1.release.xcconfig */,
+				66A772649F170C78B32ADE64E6C2E9A7 /* LVModalQueue-iOS8.0.modulemap */,
+				3555668475520CCC41E18378B18A9CFE /* LVModalQueue-iOS8.0-dummy.m */,
+				100C39AE2C33044E5F038BF9C707F8C2 /* LVModalQueue-iOS8.0-Info.plist */,
+				541A6D0D5CE6916F9E79E7E70501ADAB /* LVModalQueue-iOS8.0-prefix.pch */,
+				5F343CC1C5EC0B331BE73EE7672D3DCB /* LVModalQueue-iOS8.0-umbrella.h */,
+				52B0086C9EBE24139271973B940011D6 /* LVModalQueue-iOS8.0.debug.xcconfig */,
+				C88BA68E9BF0F403C5DCCC8B4DCFE72D /* LVModalQueue-iOS8.0.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LVModalQueue-iOS7.1";
+			sourceTree = "<group>";
+		};
+		24D3548FE10FE323FF211D8D6857DEA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE52A1682B244C2399F1E9851A93BA3F /* LVModalQueue-iOS7.1 */,
+				96F1D78369D1A61742FF8CA35B11E109 /* LVModalQueue-iOS8.0 */,
+				91045377845605C7480BE671BFEB1551 /* Pods-LVModalQueue_Example */,
+				6C98A564A00BD9B17B2122EDB609299A /* Pods-LVModalQueue_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6188B7D653571E61206D6CDDCDC48695 /* LVModalQueue */ = {
+		37E30140849E2ACD5BE761816B29B334 /* LVModalQueue */ = {
 			isa = PBXGroup;
 			children = (
-				DF83569850E2348A7C45092A65C09989 /* Pod */,
-				E00241B57402E48862D1EDE739A99A4A /* Support Files */,
+				E65C332EBF2E4768DDCC6194633042B0 /* UIViewController+LVModalQueue.m */,
+				234B8927AECE8E525DF32C2A63E25FF4 /* include */,
+				4217CD61DC8182126EF6ABF680983C01 /* Pod */,
+				24873D49B26D1B761831CD883227BBCC /* Support Files */,
 			);
 			name = LVModalQueue;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		7CDE36CB79DA828DB2A2025CDD714F19 /* Classes */ = {
+		4217CD61DC8182126EF6ABF680983C01 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				72FCA3261BCBFE10000778A4 /* UIViewController+LVModalQueue.h */,
-				72FCA3271BCBFE10000778A4 /* UIViewController+LVModalQueue.m */,
+				AD06E8B3AFCCE5401FAD64D5A7D0D211 /* LICENSE */,
+				5D44865280A4D90E8F1DD58B424308A7 /* LVModalQueue.podspec */,
+				E67BD4EB76C7BCBDFB3A47495164EB6B /* README.md */,
 			);
-			path = Classes;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				CCE9FF147C2D0A5501453E626DA4879B /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1F6D2F654A970638F98204E0374E30D5 /* Products */,
-				CCD9F30D30D86417751F354CBC258199 /* Targets Support Files */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		91057788695CFA4FC0808BCEE364118B /* Pods-LVModalQueue_Tests */ = {
+		62A19A6D9C28DF7B7AB9CD6331DC021D /* Pods-LVModalQueue_Example */ = {
 			isa = PBXGroup;
 			children = (
-				EF24E8045DA0225A40E1A639D1840E08 /* Info.plist */,
-				CB3F01A318FD2FE0E298E9EF58B1135B /* Pods-LVModalQueue_Tests.modulemap */,
-				6BA51D423437BE30BABE7EAC36AF4779 /* Pods-LVModalQueue_Tests-acknowledgements.markdown */,
-				966CD2128ED2C5BFBAC33A318241B8F1 /* Pods-LVModalQueue_Tests-acknowledgements.plist */,
-				C7849AA8050E0691CC382BD1CAFEFA5A /* Pods-LVModalQueue_Tests-dummy.m */,
-				4E671911B0F0022291D8D83BE3946E81 /* Pods-LVModalQueue_Tests-frameworks.sh */,
-				D8AFE50D14A8C3DFAE6D8B582A4FB8A0 /* Pods-LVModalQueue_Tests-resources.sh */,
-				0AC6CCE85DAEC093A2C8E8C8D0284F4B /* Pods-LVModalQueue_Tests-umbrella.h */,
-				33E276A631ECA52CD7F84E8A1110B5B6 /* Pods-LVModalQueue_Tests.debug.xcconfig */,
-				7CC2217DA66704E30E03C9AA37DD3AFE /* Pods-LVModalQueue_Tests.release.xcconfig */,
+				BF5B579B56EB02EFF91A867725946CE2 /* Pods-LVModalQueue_Example.modulemap */,
+				8319F4C5B5C304C1547047E80AC32F90 /* Pods-LVModalQueue_Example-acknowledgements.markdown */,
+				73E961EFD7E4B1668506C8287FFBAE37 /* Pods-LVModalQueue_Example-acknowledgements.plist */,
+				5578C0C31902AD208528D93D59FDE55F /* Pods-LVModalQueue_Example-dummy.m */,
+				3502D21D25AEBED172D1D14D374580F2 /* Pods-LVModalQueue_Example-frameworks.sh */,
+				2630CC778AE5679A1E92FC695FF2221E /* Pods-LVModalQueue_Example-Info.plist */,
+				7059970DA18E3D2279A6CAB7E0A85243 /* Pods-LVModalQueue_Example-umbrella.h */,
+				896D525B8C9A25033BA5E5FE22B5E3C5 /* Pods-LVModalQueue_Example.debug.xcconfig */,
+				EEBF01A50FA809B6C117FA62C7E1FC8A /* Pods-LVModalQueue_Example.release.xcconfig */,
+			);
+			name = "Pods-LVModalQueue_Example";
+			path = "Target Support Files/Pods-LVModalQueue_Example";
+			sourceTree = "<group>";
+		};
+		89A627659B13FC46AA52759724AD4F9E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62A19A6D9C28DF7B7AB9CD6331DC021D /* Pods-LVModalQueue_Example */,
+				A376ACA59E0B44C7A752C23E102ABD33 /* Pods-LVModalQueue_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A376ACA59E0B44C7A752C23E102ABD33 /* Pods-LVModalQueue_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0C3F060E9E6769DFBAB3468B4B3AA /* Pods-LVModalQueue_Tests.modulemap */,
+				C947168209DCC3C094B4550D0A1E07A4 /* Pods-LVModalQueue_Tests-acknowledgements.markdown */,
+				4FA759030444630B017614C795C5284C /* Pods-LVModalQueue_Tests-acknowledgements.plist */,
+				094CDFB08E11F40823A68CB76CB3E59E /* Pods-LVModalQueue_Tests-dummy.m */,
+				A7F3BA870378A1973346A2F2D3F9248C /* Pods-LVModalQueue_Tests-frameworks.sh */,
+				FB5824007C8CBF0191CBAF2CD2215107 /* Pods-LVModalQueue_Tests-Info.plist */,
+				11B536CDA54E9B9749AA223DFC568BD1 /* Pods-LVModalQueue_Tests-umbrella.h */,
+				43BA46764F643D9A0B4A50B6B61AA87F /* Pods-LVModalQueue_Tests.debug.xcconfig */,
+				2B760B4E1372CDAB6598C11CDEE4F30E /* Pods-LVModalQueue_Tests.release.xcconfig */,
 			);
 			name = "Pods-LVModalQueue_Tests";
 			path = "Target Support Files/Pods-LVModalQueue_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F2A252A92C34607BD300E42AB663A0E8 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				24D3548FE10FE323FF211D8D6857DEA2 /* Products */,
+				89A627659B13FC46AA52759724AD4F9E /* Targets Support Files */,
 			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		F2A252A92C34607BD300E42AB663A0E8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CCD9F30D30D86417751F354CBC258199 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1B09C750385122D5E17959562B50CA74 /* Pods-LVModalQueue_Example */,
-				91057788695CFA4FC0808BCEE364118B /* Pods-LVModalQueue_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CCE9FF147C2D0A5501453E626DA4879B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6188B7D653571E61206D6CDDCDC48695 /* LVModalQueue */,
+				37E30140849E2ACD5BE761816B29B334 /* LVModalQueue */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DF83569850E2348A7C45092A65C09989 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7CDE36CB79DA828DB2A2025CDD714F19 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		E00241B57402E48862D1EDE739A99A4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4383B2595E57DEF76BFA30048B17FC39 /* Info.plist */,
-				042EBCCF62A7EB730DE8D1418416ABEC /* LVModalQueue.modulemap */,
-				23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */,
-				C74F002AD631F20689C4ACA844EEA753 /* LVModalQueue-dummy.m */,
-				CAD8AB0950C85B2609ACF10A05FBD7B4 /* LVModalQueue-prefix.pch */,
-				A9CB0D4D2A98CA7A9EB69539DB78550B /* LVModalQueue-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LVModalQueue";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F0DE612AA3CAFF8F4056412ED33AD02 /* Headers */ = {
+		3CB3219CB3BD258E64662EEEC6F8EEDE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4911D07112D801DC65E653A323B6F08A /* Pods-LVModalQueue_Example-umbrella.h in Headers */,
+				E8B4897BF0E29548AB5A0AF944FF6309 /* LVModalQueue-iOS7.1-umbrella.h in Headers */,
+				11DB55E03569CBD3785D5E2AA83017BC /* UIViewController+LVModalQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61AEFA529021AC90D6BE3B0A8B352907 /* Headers */ = {
+		51DEB27342DFD2B5FF7AD9DA777E8588 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0160FDBD075A0B5FAEA23B318C531FB /* LVModalQueue-umbrella.h in Headers */,
-				72FCA3281BCBFE10000778A4 /* UIViewController+LVModalQueue.h in Headers */,
+				ECFDCF70C493DA7EE9FE505506506D23 /* LVModalQueue-iOS8.0-umbrella.h in Headers */,
+				3B572FEFE7AF053BDAE01A8829FF9866 /* UIViewController+LVModalQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85E48DFE9318652108AA4CE1712CDB54 /* Headers */ = {
+		9413913DAE484A00D659A3D1A9C66E7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129EF664C644DB1425BB326D176C9F3C /* Pods-LVModalQueue_Tests-umbrella.h in Headers */,
+				C6FCFBA04F6F38E21B2BBEE23BEF2DAE /* Pods-LVModalQueue_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D377D50409F2E506B38D081797355369 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDC3D5E5FBD8FF28FD5A947ED315F33 /* Pods-LVModalQueue_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0225F86211649062797CEB625E6092FB /* Pods-LVModalQueue_Example */ = {
+		0D067D20E82A983C69DEFF54E8A17791 /* Pods-LVModalQueue_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA34DCD5711D74DFB314CD4C714A20D6 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Example" */;
+			buildConfigurationList = EF58D241FFD094FE38E547F435927BCF /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Example" */;
 			buildPhases = (
-				D7A14A32735579FD243ECC970F5DB064 /* Sources */,
-				8958A4AAB5FDBA730B86F35BDB66DEA8 /* Frameworks */,
-				5F0DE612AA3CAFF8F4056412ED33AD02 /* Headers */,
+				D377D50409F2E506B38D081797355369 /* Headers */,
+				04643305B39E1C47506E090F3EA4848F /* Sources */,
+				A4C8B9A1FDB11E329647E605FFE83130 /* Frameworks */,
+				3A3F2BB792F55F7112F6BB86223D0F23 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				96D9A7F52D83789F1CE891D1EC6CFCCB /* PBXTargetDependency */,
+				DD39059DABA17EC38E0E45F981D5A2EE /* PBXTargetDependency */,
 			);
 			name = "Pods-LVModalQueue_Example";
-			productName = "Pods-LVModalQueue_Example";
-			productReference = E9D64F783E26AE5830BB162E85D51AD1 /* Pods_LVModalQueue_Example.framework */;
+			productName = Pods_LVModalQueue_Example;
+			productReference = 91045377845605C7480BE671BFEB1551 /* Pods-LVModalQueue_Example */;
 			productType = "com.apple.product-type.framework";
 		};
-		18DAAABB5BEA9DA8E8132597C9D6F045 /* LVModalQueue */ = {
+		159D022F2AF02627A7B0E1DDFA3AB984 /* LVModalQueue-iOS8.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01DAF770EF6A8B23FDBF59FA0E650DC7 /* Build configuration list for PBXNativeTarget "LVModalQueue" */;
+			buildConfigurationList = 11CAFC629FD1940B1A9893CAF8199E4A /* Build configuration list for PBXNativeTarget "LVModalQueue-iOS8.0" */;
 			buildPhases = (
-				743FDC418A89BE8EF1D23797AD9ACDCD /* Sources */,
-				C79E81D0A7BE99C91BDF889782969908 /* Frameworks */,
-				F71CF4ACB6D1783A572928A1E52B69AD /* Resources */,
-				61AEFA529021AC90D6BE3B0A8B352907 /* Headers */,
+				51DEB27342DFD2B5FF7AD9DA777E8588 /* Headers */,
+				30DCD779CF2CB59522AB87EAE256A0EC /* Sources */,
+				ECEA0B893F4C349951E5F6B82A3EDDCF /* Frameworks */,
+				139FD99460C89BC108FE2DD42020B644 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				07A5C21F15CEFEFCA27A5DFF35471DA6 /* PBXTargetDependency */,
 			);
-			name = LVModalQueue;
+			name = "LVModalQueue-iOS8.0";
 			productName = LVModalQueue;
-			productReference = 5449C776BA2D9DE91CB8C8B7AC043156 /* LVModalQueue.framework */;
+			productReference = 96F1D78369D1A61742FF8CA35B11E109 /* LVModalQueue-iOS8.0 */;
 			productType = "com.apple.product-type.framework";
 		};
-		A33DB7095DAF69DC788467D731FE0AD6 /* LVModalQueue-LVModalQueue */ = {
+		5AF7D09AC67D71125A168C3E2E5F6E0A /* LVModalQueue-iOS7.1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81A71A6016D8828BD8B812A221F9BF59 /* Build configuration list for PBXNativeTarget "LVModalQueue-LVModalQueue" */;
+			buildConfigurationList = 12C43A297F8ADC7431BF433316DD8476 /* Build configuration list for PBXNativeTarget "LVModalQueue-iOS7.1" */;
 			buildPhases = (
-				0E1397E14BFFC86EE645BF9DCA2FEF43 /* Sources */,
-				449BBEF1DA52BC4DF4FC89A469416D83 /* Frameworks */,
-				D9B8D3B7E5542D1E66334071EDFB5A40 /* Resources */,
+				3CB3219CB3BD258E64662EEEC6F8EEDE /* Headers */,
+				DBBFE4FF7827D6BB61E85913B700209A /* Sources */,
+				98E3E1F16AC8E220E86F09B48532522D /* Frameworks */,
+				EBFE2B443BB1A5D35CB7A17043257298 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LVModalQueue-LVModalQueue";
-			productName = "LVModalQueue-LVModalQueue";
-			productReference = 81D9B6FA591B734FC91D81464E7A87F8 /* LVModalQueue.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = "LVModalQueue-iOS7.1";
+			productName = LVModalQueue;
+			productReference = CE52A1682B244C2399F1E9851A93BA3F /* LVModalQueue-iOS7.1 */;
+			productType = "com.apple.product-type.framework";
 		};
-		CA512A282A1986D7BEC86A8242C4E04F /* Pods-LVModalQueue_Tests */ = {
+		87279E01571ADBB932E8051F21444B4A /* Pods-LVModalQueue_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 854C41FD4BDA4BCB86931A5689A496C5 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Tests" */;
+			buildConfigurationList = 416552450E5FC4608D48CD08912719E5 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Tests" */;
 			buildPhases = (
-				F02CF21963AFA946B553F8B8AB542DF8 /* Sources */,
-				CB3E9ADB3933664F2C003AE272F6A698 /* Frameworks */,
-				85E48DFE9318652108AA4CE1712CDB54 /* Headers */,
+				9413913DAE484A00D659A3D1A9C66E7C /* Headers */,
+				07E56B2B85CD5565AA7244D8D9BC1AC0 /* Sources */,
+				8CD855B262CF2DD3932213C638B8C632 /* Frameworks */,
+				104C58A4AA12E6FB2BBCC450272AA10B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CF38755EA2DAC51E864B7BF838BD8040 /* PBXTargetDependency */,
+				D799F63C1F59AB6CC125DBF2B15313B0 /* PBXTargetDependency */,
 			);
 			name = "Pods-LVModalQueue_Tests";
-			productName = "Pods-LVModalQueue_Tests";
-			productReference = FF1B3A70D243402960506D7893ECE463 /* Pods_LVModalQueue_Tests.framework */;
+			productName = Pods_LVModalQueue_Tests;
+			productReference = 6C98A564A00BD9B17B2122EDB609299A /* Pods-LVModalQueue_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1F6D2F654A970638F98204E0374E30D5 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 24D3548FE10FE323FF211D8D6857DEA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18DAAABB5BEA9DA8E8132597C9D6F045 /* LVModalQueue */,
-				A33DB7095DAF69DC788467D731FE0AD6 /* LVModalQueue-LVModalQueue */,
-				0225F86211649062797CEB625E6092FB /* Pods-LVModalQueue_Example */,
-				CA512A282A1986D7BEC86A8242C4E04F /* Pods-LVModalQueue_Tests */,
+				5AF7D09AC67D71125A168C3E2E5F6E0A /* LVModalQueue-iOS7.1 */,
+				159D022F2AF02627A7B0E1DDFA3AB984 /* LVModalQueue-iOS8.0 */,
+				0D067D20E82A983C69DEFF54E8A17791 /* Pods-LVModalQueue_Example */,
+				87279E01571ADBB932E8051F21444B4A /* Pods-LVModalQueue_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D9B8D3B7E5542D1E66334071EDFB5A40 /* Resources */ = {
+		104C58A4AA12E6FB2BBCC450272AA10B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F71CF4ACB6D1783A572928A1E52B69AD /* Resources */ = {
+		139FD99460C89BC108FE2DD42020B644 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B0D73D1E715B1626B8547479B8960F /* LVModalQueue.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3F2BB792F55F7112F6BB86223D0F23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFE2B443BB1A5D35CB7A17043257298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E1397E14BFFC86EE645BF9DCA2FEF43 /* Sources */ = {
+		04643305B39E1C47506E090F3EA4848F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B253ADFB57201DA4FABCB56F8187A0 /* Pods-LVModalQueue_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		743FDC418A89BE8EF1D23797AD9ACDCD /* Sources */ = {
+		07E56B2B85CD5565AA7244D8D9BC1AC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FCA3291BCBFE10000778A4 /* UIViewController+LVModalQueue.m in Sources */,
-				B1BDD0C38E2CE50AAA5159BAA480069C /* LVModalQueue-dummy.m in Sources */,
+				B44C87A4CC7CC66574851E74A3D87DCF /* Pods-LVModalQueue_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7A14A32735579FD243ECC970F5DB064 /* Sources */ = {
+		30DCD779CF2CB59522AB87EAE256A0EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02F85B7C4C21E255103F54815A6F5AF /* Pods-LVModalQueue_Example-dummy.m in Sources */,
+				A9AF0BB2DCECD224AD9F9AB74019FF74 /* LVModalQueue-iOS8.0-dummy.m in Sources */,
+				7B2834ACD9E37623045C0FA9AB0B908F /* module.modulemap in Sources */,
+				11C27E973674F1A1DE89A243B7F0D1A9 /* UIViewController+LVModalQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F02CF21963AFA946B553F8B8AB542DF8 /* Sources */ = {
+		DBBFE4FF7827D6BB61E85913B700209A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60FD79E6AFE950719A5EE41BEC5E247E /* Pods-LVModalQueue_Tests-dummy.m in Sources */,
+				0EB42819D1129C01E424129679EB0830 /* LVModalQueue-iOS7.1-dummy.m in Sources */,
+				19FB3D9EBC596CD224519F64691F2E98 /* module.modulemap in Sources */,
+				5D60F7AC7731F2DBF31F52E2BDB1ACE4 /* UIViewController+LVModalQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		07A5C21F15CEFEFCA27A5DFF35471DA6 /* PBXTargetDependency */ = {
+		D799F63C1F59AB6CC125DBF2B15313B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "LVModalQueue-LVModalQueue";
-			target = A33DB7095DAF69DC788467D731FE0AD6 /* LVModalQueue-LVModalQueue */;
-			targetProxy = 30308322C39AB43733168C7FD7FC7801 /* PBXContainerItemProxy */;
+			name = "LVModalQueue-iOS7.1";
+			target = 5AF7D09AC67D71125A168C3E2E5F6E0A /* LVModalQueue-iOS7.1 */;
+			targetProxy = 92D8EA168D9471C315ED9DEF853A1456 /* PBXContainerItemProxy */;
 		};
-		96D9A7F52D83789F1CE891D1EC6CFCCB /* PBXTargetDependency */ = {
+		DD39059DABA17EC38E0E45F981D5A2EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LVModalQueue;
-			target = 18DAAABB5BEA9DA8E8132597C9D6F045 /* LVModalQueue */;
-			targetProxy = D57C0EEF5DBED313F28709FADC89B38D /* PBXContainerItemProxy */;
-		};
-		CF38755EA2DAC51E864B7BF838BD8040 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LVModalQueue;
-			target = 18DAAABB5BEA9DA8E8132597C9D6F045 /* LVModalQueue */;
-			targetProxy = C199A7BBF7DC3E9F68B72D8F2F66C726 /* PBXContainerItemProxy */;
+			name = "LVModalQueue-iOS8.0";
+			target = 159D022F2AF02627A7B0E1DDFA3AB984 /* LVModalQueue-iOS8.0 */;
+			targetProxy = A58CCEAB129D1C570705924025512E95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+		06CD03D6A892D01856C6CA7D49DFB6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B760B4E1372CDAB6598C11CDEE4F30E /* Pods-LVModalQueue_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Pods-LVModalQueue_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Pods-LVModalQueue_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		100E7844423040A2812107428F8B9F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEB4DA693629270197DC949932567E7 /* LVModalQueue-iOS7.1.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1.modulemap";
+				PRODUCT_MODULE_NAME = LVModalQueue;
+				PRODUCT_NAME = LVModalQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19DE3FAB9DAEBB5E58729EF81ECB22D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		35F8F9D321A0777C26D4F8BADA3BB6AD /* Debug */ = {
+		23DF5C3DF47E6897B6B343D8EA9496C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */;
+			baseConfigurationReference = 37D4F5112B9D13FC9064CDD4181B6C51 /* LVModalQueue-iOS7.1.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue/LVModalQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LVModalQueue/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LVModalQueue/LVModalQueue.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/LVModalQueue-iOS7.1/LVModalQueue-iOS7.1.modulemap";
+				PRODUCT_MODULE_NAME = LVModalQueue;
 				PRODUCT_NAME = LVModalQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27E6B719419C7F8D0FCFAF2435B98604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88BA68E9BF0F403C5DCCC8B4DCFE72D /* LVModalQueue-iOS8.0.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0.modulemap";
+				PRODUCT_MODULE_NAME = LVModalQueue;
+				PRODUCT_NAME = LVModalQueue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6616D47D0F29AC34BAA4C5A304A291BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896D525B8C9A25033BA5E5FE22B5E3C5 /* Pods-LVModalQueue_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,55 +726,30 @@
 			};
 			name = Debug;
 		};
-		3C40332ACF312A555CB4AD3EE688D3B7 /* Release */ = {
+		9EB538A3ED4D069CD4903B8B1ECBD5A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */;
+			baseConfigurationReference = 43BA46764F643D9A0B4A50B6B61AA87F /* Pods-LVModalQueue_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue/LVModalQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LVModalQueue/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LVModalQueue/LVModalQueue.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LVModalQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		68D57E99B23B2B3B1DBFEE71FE113E8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33E276A631ECA52CD7F84E8A1110B5B6 /* Pods-LVModalQueue_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Pods-LVModalQueue_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Pods-LVModalQueue_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_LVModalQueue_Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,169 +758,179 @@
 			};
 			name = Debug;
 		};
-		96A97D7C9ABC5D08E5CC7E9E1A85AAA1 /* Release */ = {
+		A24087CD749459B8BADCB9616FE2A6EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CC2217DA66704E30E03C9AA37DD3AFE /* Pods-LVModalQueue_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Tests/Pods-LVModalQueue_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_LVModalQueue_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		A29382A439E43921DA33ADDC9EF14552 /* Debug */ = {
+		AAA5E4E31EAAB42134BA89ACB2B81F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */;
+			baseConfigurationReference = 52B0086C9EBE24139271973B940011D6 /* LVModalQueue-iOS8.0.debug.xcconfig */;
 			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LVModalQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		B8270BA3B36F9B55203CC2B18D97C2CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3DBE899D36367AA82063C92FC985307 /* Pods-LVModalQueue_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_LVModalQueue_Example;
+				MODULEMAP_FILE = "Target Support Files/LVModalQueue-iOS8.0/LVModalQueue-iOS8.0.modulemap";
+				PRODUCT_MODULE_NAME = LVModalQueue;
+				PRODUCT_NAME = LVModalQueue;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BB53EE2A6780A2E7E87E522CA281C0F5 /* Release */ = {
+		D6F73AF4EF6CCCBBCDC5E0D856C8DBA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A491076512504C1EB6FFE5B4174A23F3 /* Pods-LVModalQueue_Example.release.xcconfig */;
+			baseConfigurationReference = EEBF01A50FA809B6C117FA62C7E1FC8A /* Pods-LVModalQueue_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LVModalQueue_Example/Pods-LVModalQueue_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_LVModalQueue_Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EE58CD01A7865D27AF2B282943A9B852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B0BE21ED9769A3407032AC3D805981 /* LVModalQueue.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LVModalQueue;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01DAF770EF6A8B23FDBF59FA0E650DC7 /* Build configuration list for PBXNativeTarget "LVModalQueue" */ = {
+		11CAFC629FD1940B1A9893CAF8199E4A /* Build configuration list for PBXNativeTarget "LVModalQueue-iOS8.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35F8F9D321A0777C26D4F8BADA3BB6AD /* Debug */,
-				3C40332ACF312A555CB4AD3EE688D3B7 /* Release */,
+				AAA5E4E31EAAB42134BA89ACB2B81F1F /* Debug */,
+				27E6B719419C7F8D0FCFAF2435B98604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		12C43A297F8ADC7431BF433316DD8476 /* Build configuration list for PBXNativeTarget "LVModalQueue-iOS7.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				23DF5C3DF47E6897B6B343D8EA9496C9 /* Debug */,
+				100E7844423040A2812107428F8B9F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81A71A6016D8828BD8B812A221F9BF59 /* Build configuration list for PBXNativeTarget "LVModalQueue-LVModalQueue" */ = {
+		416552450E5FC4608D48CD08912719E5 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A29382A439E43921DA33ADDC9EF14552 /* Debug */,
-				EE58CD01A7865D27AF2B282943A9B852 /* Release */,
+				9EB538A3ED4D069CD4903B8B1ECBD5A5 /* Debug */,
+				06CD03D6A892D01856C6CA7D49DFB6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		854C41FD4BDA4BCB86931A5689A496C5 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68D57E99B23B2B3B1DBFEE71FE113E8C /* Debug */,
-				96A97D7C9ABC5D08E5CC7E9E1A85AAA1 /* Release */,
+				19DE3FAB9DAEBB5E58729EF81ECB22D7 /* Debug */,
+				A24087CD749459B8BADCB9616FE2A6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA34DCD5711D74DFB314CD4C714A20D6 /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Example" */ = {
+		EF58D241FFD094FE38E547F435927BCF /* Build configuration list for PBXNativeTarget "Pods-LVModalQueue_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8270BA3B36F9B55203CC2B18D97C2CB /* Debug */,
-				BB53EE2A6780A2E7E87E522CA281C0F5 /* Release */,
+				6616D47D0F29AC34BAA4C5A304A291BA /* Debug */,
+				D6F73AF4EF6CCCBBCDC5E0D856C8DBA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
