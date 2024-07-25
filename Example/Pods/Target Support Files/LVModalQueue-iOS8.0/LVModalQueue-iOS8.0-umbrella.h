@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "UIViewController+LVModalQueue.h"
 
-FOUNDATION_EXPORT double Pods_LVModalQueue_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_LVModalQueue_ExampleVersionString[];
+FOUNDATION_EXPORT double LVModalQueueVersionNumber;
+FOUNDATION_EXPORT const unsigned char LVModalQueueVersionString[];
 

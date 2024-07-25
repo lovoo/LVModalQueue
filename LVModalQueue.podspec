@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LVModalQueue"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.license          = { :type => 'BSD' }
   s.summary          = "Queue presentViewController: and dismissViewController: when called multiple times"
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Transitions are queued for later execution.
   s.tvos.deployment_target = '9.0'
 
   s.requires_arc = true
-  s.source_files = 'Pod/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files = 'Sources/LVModalQueue/**/*'
+  s.public_header_files = 'Sources/LVModalQueue/**/*.h'
   s.frameworks = 'UIKit'
 end

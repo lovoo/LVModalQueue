@@ -1,5 +1,5 @@
 framework module LVModalQueue {
-  umbrella header "LVModalQueue-umbrella.h"
+  umbrella header "LVModalQueue-iOS8.0-umbrella.h"
 
   export *
   module * { export * }

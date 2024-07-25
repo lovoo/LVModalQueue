@@ -5,13 +5,18 @@ This fixes 'NSInternalInconsistencyException's when _presentViewController:_ and
 [![Build Status](https://travis-ci.org/lovoo/LVModalQueue.svg?branch=master)](https://travis-ci.org/lovoo/LVModalQueue) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Quick start
+### Swift Package Manager
+```swift
+dependencies: [
+    .package(url: "https://github.com/lovoo/LVModalQueue.git", .upToNextMajor(from: "0.3.0"))
+]
+```
 
-LVModalQueue is available on CocoaPods.
-
-Add the following to your Podfile:
+### Cocoapods
 ```ruby
 pod 'LVModalQueue', :git => 'https://github.com/Lovoo/LVModalQueue'
 ```
+
 __Done! You don't have to import anything or change your existing code!__
 
 ## Sample

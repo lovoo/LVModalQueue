@@ -1,14 +1,16 @@
 PODS:
-  - LVModalQueue (0.1.0)
+  - LVModalQueue (0.3.0)
 
 DEPENDENCIES:
   - LVModalQueue (from `../`)
 
 EXTERNAL SOURCES:
   LVModalQueue:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  LVModalQueue: 7027f26bf75322329777cfe6f203bc759f2fdfde
+  LVModalQueue: 79984475a7adaccb33e8e3ef9ad06742852ff81b
 
-COCOAPODS: 0.39.0.rc.1
+PODFILE CHECKSUM: 41d57f05063b6c447c63bd9c09d40153d92c919e
+
+COCOAPODS: 1.15.2
